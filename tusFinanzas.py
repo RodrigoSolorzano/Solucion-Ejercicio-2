@@ -30,13 +30,8 @@ class Finanzas:
         self.Cuenta = 0.0
         self.TotalList = []
 
-    def getIngresosYEgresos(self, ingresos, egresos):
-        self.TotalList.append(ingresos)
-        self.TotalList.append(egresos)
-        return self.TotalList
-
     def getTotalCuenta(self, ingreso, egreso):
-        self.Cuenta = self.Cuenta + ingreso + egreso
+        self.Cuenta = ingreso + egreso
         return self.Cuenta
 
 
